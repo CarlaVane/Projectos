@@ -1,4 +1,6 @@
-function HighProducts() {
+import React from "react";
+
+const HighProducts: React.FC = () => {
   return (
     <section className="bg-gray-100 py-8">
       <div className="container mx-auto">
@@ -12,6 +14,7 @@ function HighProducts() {
               <img
                 src={`https://via.placeholder.com/200x150?text=Produto+${item}`}
                 alt={`Produto ${item}`}
+                className="w-full"
               />
               <h3 className="font-bold mt-2">Produto {item}</h3>
               <p className="text-gray-600">Descrição breve</p>
@@ -21,5 +24,6 @@ function HighProducts() {
       </div>
     </section>
   );
-}
+};
+
 export default HighProducts;

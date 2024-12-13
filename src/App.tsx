@@ -1,18 +1,7 @@
-import "./App.css";
-import Header from "./Pages/Header/Header";
-import Footer from "./Pages/Footer/Footer";
-import HighProducts from "./Pages/Produtos/HighlightProducts";
-import ProductsShowCase from "./Pages/Produtos/ProductsShow";
+import React from "react";
+import AppRoutes from "./Routes";
 
-function App() {
-  return (
-    <>
-      <Header />
-      <HighProducts />
-      <ProductsShowCase />
-      <Footer />
-    </>
-  );
-}
-
+const App: React.FC = () => {
+  return <AppRoutes />;
+};
 export default App;
