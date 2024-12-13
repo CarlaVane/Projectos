@@ -8,6 +8,7 @@ import ProductShowcase from "../../compoments/ProductShow";
 const Home: React.FC = () => {
   return (
     <>
+  
       <Slogan />
       <Header />
       <HighProducts />
