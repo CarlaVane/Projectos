@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-6">
-      <div className="container mx-auto text-center">
-        <p className="text-sm">
+    <footer className="py-10  shadow-lg bg-primary">
+      <div className="container mx-auto text-lg text-center  text-white">
+        <p className="">
           &copy; 2024 Kero. Todos os direitos reservados.
         </p>
         <nav className="flex flex-col space-y-2 mt-2">

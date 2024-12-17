@@ -8,7 +8,7 @@ const ProductShowcase: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Produtos na grade */}
           {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div key={item} className="border rounded-lg shadow-sm p-4">
+            <div key={item} className="border rounded-xl shadow-xl p-4">
               <img
                 src={`https://via.placeholder.com/150x150?text=Produto+${item}`}
                 alt={`Produto ${item}`}
@@ -16,7 +16,7 @@ const ProductShowcase: React.FC = () => {
               />
               <h3 className="font-bold mt-2">Produto {item}</h3>
               <p className="text-gray-600">Descrição breve</p>
-              <button className="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+              <button className="mt-2 bg-primary text-white px-4 py-2 rounded hover: shadow-xl">
                 Comprar
               </button>
             </div>

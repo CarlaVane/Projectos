@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaUser } from "react-icons/fa";
 import logo from "../assets/tar.png";
 
 const Header: React.FC = () => {
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
           </a>
         </div>
 
-        <nav className="space-x-6 text-gray-800">
+        <nav className="space-x-8 text-gray-800">
           <a href="/" className="text-xl hover:text-primary transition-colors">
             Home
           </a>
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
           <input
             type="text"
             placeholder="Buscar..."
-            className="px-20 py-2 rounded-full border border-gray-50 focus:ring focus: shadow-sm focus:outline-none"
+            className="px-28 py-2 rounded-full border border-gray-50 focus:ring focus: shadow-sm focus:outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -60,15 +60,15 @@ const Header: React.FC = () => {
         <div className="flex items-center space-x-6">
           <a
             href="/login"
-            className="hover:text-primary text-xl transition-colors"
+            className=""
           >
-            Login/Registro
+            <FaUser className="text-2xl text-primary" />
           </a>
           <a
             href="/carrinho"
-            className="hover:text-primary flex items-center transition-colors"
+            className="cursor-pointer flex items-center "
           >
-            <FaShoppingCart className="text-2xl" />
+            <FaShoppingCart className="text-2xl text-primary" />
             <span className="ml-1">(0)</span>
           </a>
         </div>
